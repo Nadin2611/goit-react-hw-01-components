@@ -11,7 +11,6 @@ export const ProfileContainer = styled.div`
   height: 270px;
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
   box-shadow: ${props => props.theme.shadows.regular};
 `;
 
