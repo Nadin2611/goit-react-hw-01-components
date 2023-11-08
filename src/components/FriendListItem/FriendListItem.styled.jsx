@@ -7,7 +7,7 @@ export const FriendItem = styled.li`
   width: 300px;
   box-shadow: ${props => props.theme.shadows.regular};
   border-radius: ${props => props.theme.spacing(2)};
-  background-color: ${props => (props.isOnline ? 'green' : 'red')};
+  background-color: ${props => (props.$isOnline ? 'green' : 'red')};
 `;
 
 export const Status = styled.span`

@@ -22,13 +22,9 @@ export const TransactionHistory = ({ items }) => {
         {items.map(({ id, type, amount, currency }) => {
           return (
             <TableRow key={id}>
-              <TableCell style={{ textAlign: 'left', paddingLeft: '120px' }}>
-                {type.charAt(0).toUpperCase() + type.slice(1)}
-              </TableCell>
-              <TableCell style={{ textAlign: 'right', paddingRight: '100px' }}>
-                {amount}
-              </TableCell>
-              <TableCell style={{ textAlign: 'center' }}>{currency}</TableCell>
+              <TableCell className="left">{type}</TableCell>
+              <TableCell className="right">{amount}</TableCell>
+              <TableCell className="center">{currency}</TableCell>
             </TableRow>
           );
         })}

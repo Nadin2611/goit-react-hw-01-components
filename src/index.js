@@ -4,7 +4,6 @@ import { App } from 'components/App';
 import { GlobalStyle } from 'styles/GlobalStyles';
 import { theme } from 'styles/theme';
 import { ThemeProvider } from 'styled-components';
-// import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

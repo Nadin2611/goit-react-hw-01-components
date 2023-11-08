@@ -11,7 +11,6 @@ export const App = () => {
   return (
     <div
       style={{
-        // height: '100vh',
         overflow: 'auto',
         display: 'flex',
         flexDirection: 'column',
@@ -23,7 +22,7 @@ export const App = () => {
         gap: '40px',
       }}
     >
-      React homework template
+      <h2>Profile</h2>
       <Profile
         username={userData.username}
         tag={userData.tag}
@@ -32,9 +31,9 @@ export const App = () => {
         stats={userData.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      My friends
+      <h2>My friends</h2>
       <FriendList friends={friends} />
-      Transaction history
+      <h2>Transaction history</h2>
       <TransactionHistory items={transactions} />
     </div>
   );

@@ -24,16 +24,31 @@ export const TableHeaderCell = styled.th`
 export const TableRow = styled.tr`
   font-size: ${props => props.theme.fontSizes.small};
   &:nth-child(even) {
-    background-color: #f2f2f2; /* Колір для парних рядків */
+    background-color: #f2f2f2;
   }
   &:nth-child(odd) {
-    background-color: #ffffff; /* Колір для непарних рядків */
+    background-color: #ffffff;
   }
 `;
 
 export const TableCell = styled.td`
   padding: 10px;
   border: 1px solid #ccc;
+
+  &.left {
+    text-align: left;
+    padding-left: 120px;
+    text-transform: capitalize;
+  }
+
+  &.right {
+    text-align: right;
+    padding-right: 100px;
+  }
+
+  &.center {
+    text-align: center;
+  }
 `;
 
 export const TableBody = styled.tbody``;
